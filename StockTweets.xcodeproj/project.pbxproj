@@ -12,6 +12,7 @@
 		310D03872329563C007E96B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D03852329563C007E96B7 /* Main.storyboard */; };
 		310D038C2329563D007E96B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310D038B2329563D007E96B7 /* Assets.xcassets */; };
 		310D038F2329563D007E96B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D038D2329563D007E96B7 /* LaunchScreen.storyboard */; };
+		31929FBD23329A5A0094D1B4 /* classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31929FB823329A5A0094D1B4 /* classifier.mlmodel */; };
 		31A88EEE232A0C1700E03AFE /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A88EE7232A0BE500E03AFE /* SwifteriOS.framework */; };
 		31A88EEF232A0C1700E03AFE /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31A88EE7232A0BE500E03AFE /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
@@ -83,6 +84,7 @@
 		310D038B2329563D007E96B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		310D038E2329563D007E96B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		310D03902329563D007E96B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		31929FB823329A5A0094D1B4 /* classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = classifier.mlmodel; path = ../../../classifier.mlmodel; sourceTree = "<group>"; };
 		31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StockTweetsModelMaker.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,6 +121,7 @@
 		310D03802329563C007E96B7 /* StockTweets */ = {
 			isa = PBXGroup;
 			children = (
+				31929FB823329A5A0094D1B4 /* classifier.mlmodel */,
 				31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */,
 				310D03812329563C007E96B7 /* AppDelegate.swift */,
 				310D03832329563C007E96B7 /* ViewController.swift */,
@@ -261,6 +264,7 @@
 			files = (
 				310D03842329563C007E96B7 /* ViewController.swift in Sources */,
 				310D03822329563C007E96B7 /* AppDelegate.swift in Sources */,
+				31929FBD23329A5A0094D1B4 /* classifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
