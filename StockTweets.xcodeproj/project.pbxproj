@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,9 +12,10 @@
 		310D03872329563C007E96B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D03852329563C007E96B7 /* Main.storyboard */; };
 		310D038C2329563D007E96B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310D038B2329563D007E96B7 /* Assets.xcassets */; };
 		310D038F2329563D007E96B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D038D2329563D007E96B7 /* LaunchScreen.storyboard */; };
-		31929FBD23329A5A0094D1B4 /* classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31929FB823329A5A0094D1B4 /* classifier.mlmodel */; };
 		31A88EEE232A0C1700E03AFE /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A88EE7232A0BE500E03AFE /* SwifteriOS.framework */; };
 		31A88EEF232A0C1700E03AFE /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31A88EE7232A0BE500E03AFE /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31C0F89F2333E68C00DA9B21 /* Classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31C0F89E2333E68C00DA9B21 /* Classifier.mlmodel */; };
+		5AAB5C58337E993AA5FD264F /* Pods_StockTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C62DD8BA5F267EB55DA2904 /* Pods_StockTweets.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,16 +78,19 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		2AC1F0494F5FCD6B6B347FA2 /* Pods-StockTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTweets.debug.xcconfig"; path = "Target Support Files/Pods-StockTweets/Pods-StockTweets.debug.xcconfig"; sourceTree = "<group>"; };
+		2C62DD8BA5F267EB55DA2904 /* Pods_StockTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		310D037E2329563C007E96B7 /* StockTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310D03812329563C007E96B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		310D03832329563C007E96B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		310D03862329563C007E96B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		310D038B2329563D007E96B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		310D038E2329563D007E96B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		310D03902329563D007E96B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		31929FB823329A5A0094D1B4 /* classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; name = classifier.mlmodel; path = ../../../classifier.mlmodel; sourceTree = "<group>"; };
 		31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StockTweetsModelMaker.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		31C0F89A2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		31C0F89B2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		31C0F89E2333E68C00DA9B21 /* Classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Classifier.mlmodel; sourceTree = "<group>"; };
+		89D7BEF3C55748C759B719E5 /* Pods-StockTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTweets.release.xcconfig"; path = "Target Support Files/Pods-StockTweets/Pods-StockTweets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				31A88EEE232A0C1700E03AFE /* SwifteriOS.framework in Frameworks */,
+				5AAB5C58337E993AA5FD264F /* Pods_StockTweets.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +112,8 @@
 				31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */,
 				310D03802329563C007E96B7 /* StockTweets */,
 				310D037F2329563C007E96B7 /* Products */,
+				EAA7424999C688117C056BA9 /* Pods */,
+				FB34411CD22EDBA91ACC802A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -121,7 +128,7 @@
 		310D03802329563C007E96B7 /* StockTweets */ = {
 			isa = PBXGroup;
 			children = (
-				31929FB823329A5A0094D1B4 /* classifier.mlmodel */,
+				31C0F89E2333E68C00DA9B21 /* Classifier.mlmodel */,
 				31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */,
 				310D03812329563C007E96B7 /* AppDelegate.swift */,
 				310D03832329563C007E96B7 /* ViewController.swift */,
@@ -145,6 +152,23 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		EAA7424999C688117C056BA9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2AC1F0494F5FCD6B6B347FA2 /* Pods-StockTweets.debug.xcconfig */,
+				89D7BEF3C55748C759B719E5 /* Pods-StockTweets.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		FB34411CD22EDBA91ACC802A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C62DD8BA5F267EB55DA2904 /* Pods_StockTweets.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -152,10 +176,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 310D03932329563D007E96B7 /* Build configuration list for PBXNativeTarget "StockTweets" */;
 			buildPhases = (
+				DA47A406CF803FD209F6A445 /* [CP] Check Pods Manifest.lock */,
 				310D037A2329563C007E96B7 /* Sources */,
 				310D037B2329563C007E96B7 /* Frameworks */,
 				310D037C2329563C007E96B7 /* Resources */,
 				31A88EF2232A0C1800E03AFE /* Embed Frameworks */,
+				03B61BA6575694E0A4214712 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +283,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03B61BA6575694E0A4214712 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockTweets/Pods-StockTweets-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StockTweets/Pods-StockTweets-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StockTweets/Pods-StockTweets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA47A406CF803FD209F6A445 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StockTweets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		310D037A2329563C007E96B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -264,7 +332,7 @@
 			files = (
 				310D03842329563C007E96B7 /* ViewController.swift in Sources */,
 				310D03822329563C007E96B7 /* AppDelegate.swift in Sources */,
-				31929FBD23329A5A0094D1B4 /* classifier.mlmodel in Sources */,
+				31C0F89F2333E68C00DA9B21 /* Classifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,7 +350,7 @@
 		310D03852329563C007E96B7 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				310D03862329563C007E96B7 /* Base */,
+				31C0F89A2333E09900DA9B21 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -290,7 +358,7 @@
 		310D038D2329563D007E96B7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				310D038E2329563D007E96B7 /* Base */,
+				31C0F89B2333E09900DA9B21 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -301,7 +369,8 @@
 		310D03912329563D007E96B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -350,6 +419,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -362,7 +432,8 @@
 		310D03922329563D007E96B7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				ALWAYS_SEARCH_USER_PATHS = "$(inherited)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -405,6 +476,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited)";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -416,8 +488,8 @@
 		};
 		310D03942329563D007E96B7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2AC1F0494F5FCD6B6B347FA2 /* Pods-StockTweets.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R6Z67X5UU;
@@ -427,6 +499,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikdmello.StockTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -436,8 +509,8 @@
 		};
 		310D03952329563D007E96B7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89D7BEF3C55748C759B719E5 /* Pods-StockTweets.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7R6Z67X5UU;
@@ -447,6 +520,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikdmello.StockTweet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
