@@ -9,3 +9,5 @@ A sentiment analysis iOS app made specially for Premier League soccer fans who w
 - Core ML
 - Create ML
 
+## Demonstration
+![](examples/soccer-sentiment-1.png)
