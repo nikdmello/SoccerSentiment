@@ -25,7 +25,7 @@ class ViewController: UIViewController, LTMorphingLabelDelegate, UIPickerViewDat
     let tweetCount = 100
         
     // Instantiates ml model
-    let sentimentClassifier = StockClassifier()
+    let sentimentClassifier = PLSentimentClassifier()
     // Instantiates Twitter framework using OAuth Consumer Key and Secret
     // API keys are hidden
     let swifter = Swifter(consumerKey: Bundle.main.object(forInfoDictionaryKey: "ConsumerKey") as! String, consumerSecret: Bundle.main.object(forInfoDictionaryKey: "ConsumerSecret") as! String)
@@ -65,12 +65,12 @@ class ViewController: UIViewController, LTMorphingLabelDelegate, UIPickerViewDat
         swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended, success: { (results, metadata) in
             
             // Tweet data to be passed
-            var tweetArray = [StockClassifierInput]()
+            var tweetArray = [PLSentimentClassifierInput]()
             
             // Parses JSON data into an array of tweets
             for i in 0..<self.tweetCount {
                 if let tweet = results[i]["full_text"].string {
-                    let classifierTweetInput = StockClassifierInput(text: tweet)
+                    let classifierTweetInput = PLSentimentClassifierInput(text: tweet)
                     tweetArray.append(classifierTweetInput)
             
                 }
@@ -86,7 +86,7 @@ class ViewController: UIViewController, LTMorphingLabelDelegate, UIPickerViewDat
     //MARK: - Calculation logic
     
     // Genearates sentiment of the given tweets
-    func generateSentiment(tweetArray : [StockClassifierInput]) {
+    func generateSentiment(tweetArray : [PLSentimentClassifierInput]) {
         var sentimentScore = 0
         
         do {

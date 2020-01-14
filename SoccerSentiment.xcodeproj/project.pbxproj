@@ -12,9 +12,9 @@
 		310D03872329563C007E96B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D03852329563C007E96B7 /* Main.storyboard */; };
 		310D038C2329563D007E96B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310D038B2329563D007E96B7 /* Assets.xcassets */; };
 		310D038F2329563D007E96B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D038D2329563D007E96B7 /* LaunchScreen.storyboard */; };
-		310FD1E0237510E7003654E7 /* StockClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 310FD1DF237510E7003654E7 /* StockClassifier.mlmodel */; };
 		31AE5A1723CE636A0096692C /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AE5A1023CE63470096692C /* SwifteriOS.framework */; };
 		31AE5A1823CE636A0096692C /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31AE5A1023CE63470096692C /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		31AE5A4823CE7B2A0096692C /* PLSentimentClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31AE5A4723CE7B2A0096692C /* PLSentimentClassifier.mlmodel */; };
 		5AAB5C58337E993AA5FD264F /* Pods_StockTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C62DD8BA5F267EB55DA2904 /* Pods_StockTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -113,10 +113,10 @@
 		310D03832329563C007E96B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		310D038B2329563D007E96B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		310D03902329563D007E96B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		310FD1DF237510E7003654E7 /* StockClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StockClassifier.mlmodel; sourceTree = "<group>"; };
-		31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StockTweetsModelMaker.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		31AE5A0523CE63470096692C /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		31AE5A4723CE7B2A0096692C /* PLSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PLSentimentClassifier.mlmodel; sourceTree = "<group>"; };
+		31AE5A4923CE7B3D0096692C /* SoccerSentimentModel.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SoccerSentimentModel.playground; sourceTree = "<group>"; };
 		31C0F89A2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31C0F89B2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D7BEF3C55748C759B719E5 /* Pods-StockTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTweets.release.xcconfig"; path = "Target Support Files/Pods-StockTweets/Pods-StockTweets.release.xcconfig"; sourceTree = "<group>"; };
@@ -157,8 +157,8 @@
 		310D03802329563C007E96B7 /* StockTweets */ = {
 			isa = PBXGroup;
 			children = (
-				310FD1DF237510E7003654E7 /* StockClassifier.mlmodel */,
-				31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */,
+				31AE5A4723CE7B2A0096692C /* PLSentimentClassifier.mlmodel */,
+				31AE5A4923CE7B3D0096692C /* SoccerSentimentModel.playground */,
 				310D03812329563C007E96B7 /* AppDelegate.swift */,
 				310D03832329563C007E96B7 /* ViewController.swift */,
 				310D03852329563C007E96B7 /* Main.storyboard */,
@@ -412,8 +412,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				310D03842329563C007E96B7 /* ViewController.swift in Sources */,
+				31AE5A4823CE7B2A0096692C /* PLSentimentClassifier.mlmodel in Sources */,
 				310D03822329563C007E96B7 /* AppDelegate.swift in Sources */,
-				310FD1E0237510E7003654E7 /* StockClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

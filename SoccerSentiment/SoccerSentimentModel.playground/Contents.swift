@@ -2,7 +2,7 @@ import Cocoa
 import CreateML
 
 // data used to train ml model
-let data = try MLDataTable(contentsOf: URL(fileURLWithPath: "/Users/Nikhil/Desktop/AppDev/StockTweets/sentiment_m140_.csv"))
+let data = try MLDataTable(contentsOf: URL(fileURLWithPath: "/Users/Nikhil/Desktop/AppDev/SoccerSentiment/sentiment_m140_.csv"))
 ///Users/Nikhil/Downloads/twitter-sanders-apple3.csv
 ///Users/Nikhil/Desktop/AppDev/StockTweets/training.1600000.processed.noemoticon.csv
 // split of training and testing data
@@ -18,7 +18,7 @@ let evaluationMetrics = sentimentClassifier.evaluation(on: testingData, textColu
 let evaluationAccuracy = (1.0 - evaluationMetrics.classificationError) * 100
 
 // metadata
-let metadata = MLModelMetadata(author: "Nikhil D", shortDescription: "Cool stuff", version: "1")
+let metadata = MLModelMetadata(author: "Nikhil D.", shortDescription: "PL sentiment classifier", version: "1")
 
 // writes mlmodel
-try sentimentClassifier.write(to: URL(fileURLWithPath: "/Users/Nikhil/Desktop/StockClassifier.mlmodel"))
+try sentimentClassifier.write(to: URL(fileURLWithPath: "/Users/Nikhil/Desktop/PLSentimentClassifier.mlmodel"))
