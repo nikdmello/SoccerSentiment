@@ -10,4 +10,8 @@ A sentiment analysis iOS app made specially for Premier League soccer fans who w
 - Create ML
 
 ## Demonstration
-![](Examples/soccer-sentiment-1.png)
+
+<img src="Examples/soccer-sentiment-1.png" height="500" width="250">
+<img src="Examples/soccer-sentiment-pos.png" height="500" width="250">
+<img src="Examples/soccer-sentiment-neg.png" height="500" width="250">
+
