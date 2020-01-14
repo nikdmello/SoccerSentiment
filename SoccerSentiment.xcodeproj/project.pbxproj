@@ -12,9 +12,9 @@
 		310D03872329563C007E96B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D03852329563C007E96B7 /* Main.storyboard */; };
 		310D038C2329563D007E96B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 310D038B2329563D007E96B7 /* Assets.xcassets */; };
 		310D038F2329563D007E96B7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 310D038D2329563D007E96B7 /* LaunchScreen.storyboard */; };
-		31A88EEE232A0C1700E03AFE /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31A88EE7232A0BE500E03AFE /* SwifteriOS.framework */; };
-		31A88EEF232A0C1700E03AFE /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31A88EE7232A0BE500E03AFE /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		31C0F89F2333E68C00DA9B21 /* Classifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31C0F89E2333E68C00DA9B21 /* Classifier.mlmodel */; };
+		310FD1E0237510E7003654E7 /* StockClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 310FD1DF237510E7003654E7 /* StockClassifier.mlmodel */; };
+		31AE5A1723CE636A0096692C /* SwifteriOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 31AE5A1023CE63470096692C /* SwifteriOS.framework */; };
+		31AE5A1823CE636A0096692C /* SwifteriOS.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 31AE5A1023CE63470096692C /* SwifteriOS.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5AAB5C58337E993AA5FD264F /* Pods_StockTweets.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C62DD8BA5F267EB55DA2904 /* Pods_StockTweets.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,23 +54,51 @@
 			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
 			remoteInfo = SwifterTests;
 		};
-		31A88EF0232A0C1700E03AFE /* PBXContainerItemProxy */ = {
+		31AE5A0D23CE63470096692C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = 8B9F50ED1944A5AB00894629;
+			containerPortal = 31AE5A0523CE63470096692C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C1F1944AA1A00993175;
+			remoteInfo = SwifterDemoiOS;
+		};
+		31AE5A0F23CE63470096692C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AE5A0523CE63470096692C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F50EE1944A5AB00894629;
 			remoteInfo = SwifteriOS;
+		};
+		31AE5A1123CE63470096692C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AE5A0523CE63470096692C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B9F51131944A61D00894629;
+			remoteInfo = SwifterMac;
+		};
+		31AE5A1323CE63470096692C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AE5A0523CE63470096692C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8B300C471944AECB00993175;
+			remoteInfo = SwifterDemoMac;
+		};
+		31AE5A1523CE63470096692C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 31AE5A0523CE63470096692C /* Swifter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F6B4D5751C7BAC4500E06514;
+			remoteInfo = SwifterTests;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		31A88EF2232A0C1800E03AFE /* Embed Frameworks */ = {
+		31AE5A1923CE636A0096692C /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				31A88EEF232A0C1700E03AFE /* SwifteriOS.framework in Embed Frameworks */,
+				31AE5A1823CE636A0096692C /* SwifteriOS.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,16 +108,17 @@
 /* Begin PBXFileReference section */
 		2AC1F0494F5FCD6B6B347FA2 /* Pods-StockTweets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTweets.debug.xcconfig"; path = "Target Support Files/Pods-StockTweets/Pods-StockTweets.debug.xcconfig"; sourceTree = "<group>"; };
 		2C62DD8BA5F267EB55DA2904 /* Pods_StockTweets.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StockTweets.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		310D037E2329563C007E96B7 /* StockTweets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StockTweets.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		310D037E2329563C007E96B7 /* SoccerSentiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SoccerSentiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		310D03812329563C007E96B7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		310D03832329563C007E96B7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		310D038B2329563D007E96B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		310D03902329563D007E96B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		310FD1DF237510E7003654E7 /* StockClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = StockClassifier.mlmodel; sourceTree = "<group>"; };
 		31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = StockTweetsModelMaker.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
+		31AE5A0523CE63470096692C /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		31C0F89A2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31C0F89B2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		31C0F89E2333E68C00DA9B21 /* Classifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = Classifier.mlmodel; sourceTree = "<group>"; };
 		89D7BEF3C55748C759B719E5 /* Pods-StockTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTweets.release.xcconfig"; path = "Target Support Files/Pods-StockTweets/Pods-StockTweets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,8 +127,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31A88EEE232A0C1700E03AFE /* SwifteriOS.framework in Frameworks */,
 				5AAB5C58337E993AA5FD264F /* Pods_StockTweets.framework in Frameworks */,
+				31AE5A1723CE636A0096692C /* SwifteriOS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -120,7 +149,7 @@
 		310D037F2329563C007E96B7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				310D037E2329563C007E96B7 /* StockTweets.app */,
+				310D037E2329563C007E96B7 /* SoccerSentiment.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +157,7 @@
 		310D03802329563C007E96B7 /* StockTweets */ = {
 			isa = PBXGroup;
 			children = (
-				31C0F89E2333E68C00DA9B21 /* Classifier.mlmodel */,
+				310FD1DF237510E7003654E7 /* StockClassifier.mlmodel */,
 				31A88EDB23295E8100E03AFE /* StockTweetsModelMaker.playground */,
 				310D03812329563C007E96B7 /* AppDelegate.swift */,
 				310D03832329563C007E96B7 /* ViewController.swift */,
@@ -152,6 +181,18 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		31AE5A0623CE63470096692C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				31AE5A0E23CE63470096692C /* SwifterDemoiOS.app */,
+				31AE5A1023CE63470096692C /* SwifteriOS.framework */,
+				31AE5A1223CE63470096692C /* SwifterMac.framework */,
+				31AE5A1423CE63470096692C /* SwifterDemoMac.app */,
+				31AE5A1623CE63470096692C /* SwifterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EAA7424999C688117C056BA9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -164,6 +205,7 @@
 		FB34411CD22EDBA91ACC802A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				31AE5A0523CE63470096692C /* Swifter.xcodeproj */,
 				2C62DD8BA5F267EB55DA2904 /* Pods_StockTweets.framework */,
 			);
 			name = Frameworks;
@@ -180,17 +222,16 @@
 				310D037A2329563C007E96B7 /* Sources */,
 				310D037B2329563C007E96B7 /* Frameworks */,
 				310D037C2329563C007E96B7 /* Resources */,
-				31A88EF2232A0C1800E03AFE /* Embed Frameworks */,
 				03B61BA6575694E0A4214712 /* [CP] Embed Pods Frameworks */,
+				31AE5A1923CE636A0096692C /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				31A88EF1232A0C1700E03AFE /* PBXTargetDependency */,
 			);
 			name = StockTweets;
 			productName = StockTweets;
-			productReference = 310D037E2329563C007E96B7 /* StockTweets.app */;
+			productReference = 310D037E2329563C007E96B7 /* SoccerSentiment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -208,7 +249,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 310D03792329563C007E96B7 /* Build configuration list for PBXProject "StockTweets" */;
+			buildConfigurationList = 310D03792329563C007E96B7 /* Build configuration list for PBXProject "SoccerSentiment" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -220,6 +261,10 @@
 			productRefGroup = 310D037F2329563C007E96B7 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = 31AE5A0623CE63470096692C /* Products */;
+					ProjectRef = 31AE5A0523CE63470096692C /* Swifter.xcodeproj */;
+				},
 				{
 					ProductGroup = 31A88EDD232A0BE500E03AFE /* Products */;
 					ProjectRef = 31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */;
@@ -266,6 +311,41 @@
 			fileType = wrapper.cfbundle;
 			path = SwifterTests.xctest;
 			remoteRef = 31A88EEC232A0BE500E03AFE /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AE5A0E23CE63470096692C /* SwifterDemoiOS.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoiOS.app;
+			remoteRef = 31AE5A0D23CE63470096692C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AE5A1023CE63470096692C /* SwifteriOS.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifteriOS.framework;
+			remoteRef = 31AE5A0F23CE63470096692C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AE5A1223CE63470096692C /* SwifterMac.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SwifterMac.framework;
+			remoteRef = 31AE5A1123CE63470096692C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AE5A1423CE63470096692C /* SwifterDemoMac.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = SwifterDemoMac.app;
+			remoteRef = 31AE5A1323CE63470096692C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		31AE5A1623CE63470096692C /* SwifterTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = SwifterTests.xctest;
+			remoteRef = 31AE5A1523CE63470096692C /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -332,19 +412,11 @@
 			files = (
 				310D03842329563C007E96B7 /* ViewController.swift in Sources */,
 				310D03822329563C007E96B7 /* AppDelegate.swift in Sources */,
-				31C0F89F2333E68C00DA9B21 /* Classifier.mlmodel in Sources */,
+				310FD1E0237510E7003654E7 /* StockClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		31A88EF1232A0C1700E03AFE /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwifteriOS;
-			targetProxy = 31A88EF0232A0C1700E03AFE /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		310D03852329563C007E96B7 /* Main.storyboard */ = {
@@ -501,7 +573,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikdmello.StockTweet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SoccerSentiment;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -522,7 +594,7 @@
 				);
 				OTHER_SWIFT_FLAGS = "$(inherited)";
 				PRODUCT_BUNDLE_IDENTIFIER = com.nikdmello.StockTweet;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = SoccerSentiment;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -531,7 +603,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		310D03792329563C007E96B7 /* Build configuration list for PBXProject "StockTweets" */ = {
+		310D03792329563C007E96B7 /* Build configuration list for PBXProject "SoccerSentiment" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				310D03912329563D007E96B7 /* Debug */,

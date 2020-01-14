@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>ConsumerSecret</key>
+	<string>D1CJoG2Ajl0dUbEdUYJHP66S8fYg4iIKnkyHNo2PzOY3cHh6qP</string>
+	<key>ConsumerKey</key>
+	<string>uedgkuyGwVR4wwN4pxhM7V1gl</string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

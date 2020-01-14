@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -18,57 +16,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="StockTweets" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2sK-pI-fxA">
-                                <rect key="frame" x="0.0" y="60" width="375" height="46"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="40"/>
-                                <color key="textColor" red="0.29501668779514267" green="0.74091258194307641" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="What do the people think about..." textAlignment="center" minimumFontSize="20" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="SDM-va-jkT">
-                                <rect key="frame" x="16" y="541" width="343" height="30"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" spellCheckingType="yes" enablesReturnKeyAutomatically="YES"/>
-                            </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-j6-3pE">
-                                <rect key="frame" x="154" y="285" width="67" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select a team" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ak4-j6-3pE">
+                                <rect key="frame" x="83" y="409" width="209" height="40.666666666666686"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zET-ZU-LPk">
-                                <rect key="frame" x="140" y="604" width="86" height="48"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <action selector="searchButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4ca-og-DO9"/>
-                                </connections>
-                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kag-cm-srN">
+                                <rect key="frame" x="0.0" y="496" width="375" height="216"/>
+                            </pickerView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="premier-league-logo" translatesAutoresizingMaskIntoConstraints="NO" id="r6d-aq-Miw">
+                                <rect key="frame" x="45" y="44" width="285" height="190"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="189.99999999999989" id="Ggm-7A-Pkh"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Generate sentiment on any Premier League team:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JxM-wk-vZT">
+                                <rect key="frame" x="47" y="213" width="280" height="40.666666666666657"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="0.28331559073405232" blue="0.35957658237566803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="SDM-va-jkT" firstAttribute="top" secondItem="2sK-pI-fxA" secondAttribute="bottom" constant="435" id="EsC-Mb-I32"/>
-                            <constraint firstItem="2sK-pI-fxA" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="HtF-sl-H3g"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SDM-va-jkT" secondAttribute="trailing" constant="16" id="KDi-gE-EYk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="zET-ZU-LPk" secondAttribute="trailing" constant="149" id="O3T-EU-ybW"/>
-                            <constraint firstItem="SDM-va-jkT" firstAttribute="top" secondItem="ak4-j6-3pE" secondAttribute="bottom" constant="222" id="R0q-x3-KV9"/>
-                            <constraint firstItem="zET-ZU-LPk" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="U8p-X6-f38"/>
-                            <constraint firstItem="zET-ZU-LPk" firstAttribute="top" secondItem="SDM-va-jkT" secondAttribute="bottom" constant="33" id="VIg-xR-7oO"/>
-                            <constraint firstItem="2sK-pI-fxA" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="WTh-kZ-83T"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ak4-j6-3pE" secondAttribute="trailing" constant="154" id="eBz-Pk-YgZ"/>
-                            <constraint firstItem="2sK-pI-fxA" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="j5k-vI-VYk"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SDM-va-jkT" secondAttribute="bottom" constant="207" id="jhk-Bg-yUe"/>
-                            <constraint firstItem="ak4-j6-3pE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="154" id="nTd-Nv-2rd"/>
-                            <constraint firstItem="ak4-j6-3pE" firstAttribute="top" secondItem="2sK-pI-fxA" secondAttribute="bottom" constant="179" id="pn8-uk-Q3C"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zET-ZU-LPk" secondAttribute="bottom" constant="126" id="t65-K7-sMc"/>
-                            <constraint firstItem="SDM-va-jkT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="zJZ-hW-Dk6"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2sK-pI-fxA" secondAttribute="bottom" constant="672" id="zcm-Cm-lMG"/>
+                            <constraint firstItem="ak4-j6-3pE" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="83" id="7up-ju-4W9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kag-cm-srN" secondAttribute="bottom" constant="66" id="MBL-hX-FmX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JxM-wk-vZT" secondAttribute="trailing" constant="48" id="P3E-fF-tJO"/>
+                            <constraint firstItem="ak4-j6-3pE" firstAttribute="top" secondItem="JxM-wk-vZT" secondAttribute="bottom" constant="155.33000000000001" id="VcC-zM-Hct"/>
+                            <constraint firstItem="kag-cm-srN" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WDF-Tp-yAh"/>
+                            <constraint firstItem="JxM-wk-vZT" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="47" id="aMZ-ek-pnW"/>
+                            <constraint firstItem="r6d-aq-Miw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="cDn-WZ-mwV"/>
+                            <constraint firstItem="kag-cm-srN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d5c-a1-ZIe"/>
+                            <constraint firstItem="ak4-j6-3pE" firstAttribute="centerX" secondItem="kag-cm-srN" secondAttribute="centerX" id="hZC-hm-cgX"/>
+                            <constraint firstItem="ak4-j6-3pE" firstAttribute="top" secondItem="r6d-aq-Miw" secondAttribute="bottom" constant="175" id="lYI-0t-WZ3"/>
+                            <constraint firstItem="ak4-j6-3pE" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="409" id="sqf-Nj-f6q"/>
+                            <constraint firstItem="ak4-j6-3pE" firstAttribute="centerX" secondItem="r6d-aq-Miw" secondAttribute="centerX" id="t1j-HW-gE8"/>
+                            <constraint firstItem="JxM-wk-vZT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="xg2-7F-5MH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="sentimentLabel" destination="ak4-j6-3pE" id="MhD-6h-tbV"/>
-                        <outlet property="textField" destination="SDM-va-jkT" id="bYp-JV-G9b"/>
+                        <outlet property="teamPicker" destination="kag-cm-srN" id="fEB-wi-2Oe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -76,4 +66,7 @@
             <point key="canvasLocation" x="138.40000000000001" y="117.48768472906404"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="premier-league-logo" width="1200" height="503"/>
+    </resources>
 </document>

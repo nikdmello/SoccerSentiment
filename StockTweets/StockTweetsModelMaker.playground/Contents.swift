@@ -9,11 +9,10 @@ let data = try MLDataTable(contentsOf: URL(fileURLWithPath: "/Users/Nikhil/Deskt
 let(trainingData, testingData) = data.randomSplit(by: 0.8, seed: 1)
 
 // instantiates nlp ml model with training data
-let sentimentClassifier = try MLTextClassifier(trainingData: trainingData, textColumn: "text", labelColumn: "class")
-
+let sentimentClassifier = try MLTextClassifier(trainingData: trainingData, textColumn: "text", labelColumn: "label")
 
 // Computes testing metrics on the given labeled data
-let evaluationMetrics = sentimentClassifier.evaluation(on: testingData)
+let evaluationMetrics = sentimentClassifier.evaluation(on: testingData, textColumn: "text", labelColumn: "label")
 
 // The fraction of examples incorrectly labeled by this model
 let evaluationAccuracy = (1.0 - evaluationMetrics.classificationError) * 100
@@ -22,8 +21,4 @@ let evaluationAccuracy = (1.0 - evaluationMetrics.classificationError) * 100
 let metadata = MLModelMetadata(author: "Nikhil D", shortDescription: "Cool stuff", version: "1")
 
 // writes mlmodel
-try sentimentClassifier.write(to: URL(fileURLWithPath: "/Users/Nikhil/Downloads/Classifier.mlmodel"))
-
-// tests
-try sentimentClassifier.prediction(from: "I love this")
-try sentimentClassifier.prediction(from: "Apple is bad")
+try sentimentClassifier.write(to: URL(fileURLWithPath: "/Users/Nikhil/Desktop/StockClassifier.mlmodel"))

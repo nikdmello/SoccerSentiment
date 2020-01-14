@@ -1,6 +1,6 @@
 //
 //  ViewController.swift
-//  StockTweets
+//  SoccerSentiment
 //
 //  Created by Nikhil D'Mello on 9/11/19.
 //  Copyright © 2019 Nikhil D'Mello. All rights reserved.
@@ -9,31 +9,55 @@
 import UIKit
 import SwifteriOS
 import SwiftyJSON
+import LTMorphingLabel
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, LTMorphingLabelDelegate, UIPickerViewDataSource, UIPickerViewDelegate {
     
-    @IBOutlet weak var sentimentLabel: UILabel!
     
-    @IBOutlet weak var textField: UITextField!
+    @IBOutlet weak var sentimentLabel: LTMorphingLabel!
+    
+    @IBOutlet weak var teamPicker: UIPickerView!
+    
+    // Teams currently in the 2020 Premier League.
+    let teamArray = ["Arsenal", "Aston Villa", "Bournemouth", "Brighton", "Burnley FC", "Chelsea", "Crystal Palace", "Everton", "Leicester City", "Liverpool", "Manchester City", "Manchester United", "Newcastle", "Norwich City", "Sheff Utd", "Southampton", "Tottenham", "Watford", "West Ham", "Wolves"]
     
     // Number of tweets returned
     let tweetCount = 100
-    
-    @IBAction func searchButtonPressed(_ sender: UIButton) {
-        if let searchBar = textField.text {
-            fetchTweets(searchText: searchBar)
-        }
-    }
-    
+        
     // Instantiates ml model
-    let sentimentClassifier = Classifier()
+    let sentimentClassifier = StockClassifier()
     // Instantiates Twitter framework using OAuth Consumer Key and Secret
-    let swifter = Swifter(consumerKey: "ueIGM8S7NpUnAAgK3NFTXIrCP", consumerSecret: "vPPKsRqWxy1hWfiloAs6UjJXVFuGR6qquxDNCFFrNhjcNKANAT")
+    // API keys are hidden
+    let swifter = Swifter(consumerKey: Bundle.main.object(forInfoDictionaryKey: "ConsumerKey") as! String, consumerSecret: Bundle.main.object(forInfoDictionaryKey: "ConsumerSecret") as! String)
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        teamPicker.delegate = self
+        teamPicker.dataSource = self
     }
+    
+    //MARK: - PickerView delegate methods
+    
+    func numberOfComponents(in pickerView: UIPickerView) -> Int {
+        return 1
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
+        return teamArray.count
+    }
+    
+    func pickerView(_ pickerView: UIPickerView, titleForRow row: Int, forComponent component: Int) -> String? {
+        return teamArray[row]
+    }
+    
+    // Passes the Selected team name as an argument to fetch tweets.
+    func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
+        fetchTweets(searchText: teamArray[row])
+    }
+    
+    //MARK: - Networking
     
     // Fetches tweet data
     func fetchTweets(searchText: String) {
@@ -41,13 +65,14 @@ class ViewController: UIViewController {
         swifter.searchTweet(using: searchText, lang: "en", count: tweetCount, tweetMode: .extended, success: { (results, metadata) in
             
             // Tweet data to be passed
-            var tweetArray = [ClassifierInput]()
+            var tweetArray = [StockClassifierInput]()
             
             // Parses JSON data into an array of tweets
             for i in 0..<self.tweetCount {
                 if let tweet = results[i]["full_text"].string {
-                    let classifierTweetInput = ClassifierInput(text: tweet)
+                    let classifierTweetInput = StockClassifierInput(text: tweet)
                     tweetArray.append(classifierTweetInput)
+            
                 }
             }
             
@@ -58,8 +83,10 @@ class ViewController: UIViewController {
         }
     }
     
-    // Generates sentiment of the given tweets
-    func generateSentiment(tweetArray : [ClassifierInput]) {
+    //MARK: - Calculation logic
+    
+    // Genearates sentiment of the given tweets
+    func generateSentiment(tweetArray : [StockClassifierInput]) {
         var sentimentScore = 0
         
         do {
@@ -74,8 +101,12 @@ class ViewController: UIViewController {
                 else {
                     sentimentScore -= 1
                 }
+                
+                print(pred.label)
             }
-            print(sentimentScore)
+            
+            sentimentLabel.text = String(sentimentScore)
+            
         }
         catch {
             print(error)
