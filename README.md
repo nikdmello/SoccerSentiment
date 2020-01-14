@@ -11,7 +11,7 @@ A sentiment analysis iOS app made specially for Premier League soccer fans who w
 
 ## Demonstration
 
-<img src="Examples/soccer-sentiment-1.png" height="500" width="250">
-<img src="Examples/soccer-sentiment-pos.png" height="500" width="250">
-<img src="Examples/soccer-sentiment-neg.png" height="500" width="250">
+<img src="Examples/sentiment-default.png" height="500" width="250"> <img src="Examples/sentiment-pos.png" height="500" width="250"> <img src="Examples/sentiment-neg.png" height="500" width="250">
+
+
 
