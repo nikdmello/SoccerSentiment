@@ -98,14 +98,11 @@ class ViewController: UIViewController, LTMorphingLabelDelegate, UIPickerViewDat
                 if pred.label == "pos" {
                     sentimentScore += 1
                 }
-                else {
-                    sentimentScore -= 1
-                }
                 
                 print(pred.label)
             }
             
-            sentimentLabel.text = String(sentimentScore)
+            sentimentLabel.text = String(sentimentScore) + "%"
             
         }
         catch {

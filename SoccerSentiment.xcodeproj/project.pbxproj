@@ -116,7 +116,7 @@
 		31A88EDC232A0BE500E03AFE /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		31AE5A0523CE63470096692C /* Swifter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Swifter.xcodeproj; path = ../Swifter/Swifter.xcodeproj; sourceTree = "<group>"; };
 		31AE5A4723CE7B2A0096692C /* PLSentimentClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = PLSentimentClassifier.mlmodel; sourceTree = "<group>"; };
-		31AE5A4923CE7B3D0096692C /* SoccerSentimentModel.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SoccerSentimentModel.playground; sourceTree = "<group>"; };
+		31AE5A4923CE7B3D0096692C /* SoccerSentimentModel.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SoccerSentimentModel.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		31C0F89A2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		31C0F89B2333E09900DA9B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89D7BEF3C55748C759B719E5 /* Pods-StockTweets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StockTweets.release.xcconfig"; path = "Target Support Files/Pods-StockTweets/Pods-StockTweets.release.xcconfig"; sourceTree = "<group>"; };
